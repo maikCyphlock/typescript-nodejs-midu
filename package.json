@@ -1,0 +1,30 @@
+{
+  "name": "typescript-nodejs-midu",
+  "version": "0.0.1",
+  "description": "curso de typescript con express y nodejs provisto por midudev",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "dev": "ts-node-dev src/index.ts",
+    "start": "node build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "ts-standard"
+  },
+  "author": "maikcyphlock",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "ts-node-dev": "^1.1.8",
+    "ts-standard": "^11.0.0",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "express": "4.17.3"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "proyect": "./tsconfig.json"
+    },
+    "extends": "./node_modules/ts-standard/eslintrc.json"
+  }
+}
